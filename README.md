@@ -1,3 +1,27 @@
+Sanic-based microservices infrastructure
+
+Introduce
+
+One of the biggest problems faced by using python for web development is performance, which is a bit difficult to solve the C10K problem. Some asynchronous frameworks Tornado, Twisted, Gevent, etc. are designed to solve performance problems. These frameworks have improved performance a bit, but there are also all kinds of weird problems that are difficult to solve.
+
+In python3.6, the official asynchronous coroutine library asyncio officially became the standard. While retaining convenience, performance has been greatly improved, and many asynchronous frameworks have used asyncio.
+
+The earlier asynchronous framework is aiohttp, which provides the server side and the client side, and does a good encapsulation of asyncio. However, the development method is different from the most popular micro-framework flask. The development of flask is simple, lightweight and efficient. Combine the two and you have sanic.
+
+The Sanic framework is an asynchronous coroutine framework similar to Flask, which is simple and lightweight, and has high performance. This project is a microservice framework based on sanic. Microservices are very popular recently. It solves the problem of complexity, improves development efficiency, and facilitates deployment.
+
+It is the combination of these advantages, based on sanic, that integrates multiple popular libraries to build a microservice framework.
+Feature
+
+    Using the sanic asynchronous framework, it is simple, lightweight and efficient.
+    Using uvloop as the core engine makes sanic as much as Golang in single-machine concurrency in many cases.
+    Use asyncpg as the database driver, connect to the database, and execute sql statement execution.
+    Use aiohttp as Client to access other microservices.
+    Use peewee as ORM, but only for model design and migration.
+    Use opentracing as a distributed tracing system.
+    Use unittest for unit testing, and use mocks to avoid accessing other microservices.
+    Using swagger as API standard can automatically generate API documentation.
+    
 # Sanic Micro Service
 
 基于sanic的微服务基础架构

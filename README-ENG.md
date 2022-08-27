@@ -20,9 +20,9 @@ It is the combination of these advantages, based on sanic, that integrates multi
 * **Using uvloop as the core engine makes sanic as much as Golang in single-machine concurrency in many cases. **
 * **Use asyncpg as the database driver to connect to the database and execute sql statement execution. **
 * **Use aiohttp as Client to access other microservices. **
-**Use peewee as ORM, but only for model design and migration. **
-**Use opentracing as a distributed tracing system. **
-**Use unittest for unit testing, and use mocks to avoid accessing other microservices. **
+* **Use peewee as ORM, but only for model design and migration. **
+* **Use opentracing as a distributed tracing system. **
+* **Use unittest for unit testing, and use mocks to avoid accessing other microservices. **
 * **Use swagger as API standard, which can automatically generate API documentation. **
 
 ## Usage
